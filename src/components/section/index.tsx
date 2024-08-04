@@ -9,7 +9,7 @@ interface Props{
 
 export function Section({ name, label, size, action}: Props){
     return (
-        <View className='w-full flex flex-row items-center justify-between px-2'>
+        <View className='w-full flex flex-row items-center justify-between px-2 mt-4'>
             <Text className={`${size} font-semibold my-4 self-start`}>
                 {name}
             </Text>

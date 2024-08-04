@@ -6,6 +6,7 @@ import { Section } from "../components/section";
 
 import Constants from "expo-constants";
 import { TrendingFoods } from "../components/trending";
+import { Restaurants } from "../components/restaurants";
 
 export default function Index() {
   return (
@@ -21,13 +22,20 @@ export default function Index() {
         <Search />
 
         <Section 
-          name={"Melhores aperitivos"} 
+          name={"Pedidos em Alta"} 
           label={"Ver mais"} 
-          size={"text-lg"} 
+          size={"text-2xl"} 
           action={() => console.log('entrou em APERITIVOS')} 
         />
-
         <TrendingFoods />
+
+        <Section 
+          name={"Famosos no iFeed"} 
+          label={"Conhecer"} 
+          size={"text-lg"} 
+          action={() => console.log('entrou em RESTAURANTES')} 
+        />
+        <Restaurants />
       </View>
 
     </ScrollView>
