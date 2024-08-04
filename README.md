@@ -5,6 +5,13 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 ## Video on Youtube
 https://www.youtube.com/watch?v=aABUs_L4AZg
 
+## tailwind installation
+https://tailwindcss.com/docs/installation
+
+## json-server
+npm install json-server
+
+
 ## Get started
 
 1. Install dependencies
