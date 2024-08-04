@@ -6,6 +6,7 @@ import { Section } from "../components/section";
 
 import Constants from "expo-constants";
 import { TrendingFoods } from "../components/trending";
+import { Famous } from "../components/famous";
 import { Restaurants } from "../components/restaurants";
 
 export default function Index() {
@@ -18,8 +19,8 @@ export default function Index() {
       {/* full width; padding-horizonatal: 4px; */}
       <View className="w-full px-4" style={{ marginTop: Constants.statusBarHeight + 10 }}>
         <Header />
-        <Banner />
         <Search />
+        <Banner />
 
         <Section 
           name={"Pedidos em Alta"} 
@@ -33,9 +34,18 @@ export default function Index() {
           name={"Famosos no iFeed"} 
           label={"Conhecer"} 
           size={"text-lg"} 
+          action={() => console.log('entrou em FAMOSOS')} 
+        />
+        <Famous />
+
+        <Section 
+          name={"Restaurantes"} 
+          label={"Ver todos"} 
+          size={"text-lg"} 
           action={() => console.log('entrou em RESTAURANTES')} 
         />
         <Restaurants />
+
       </View>
 
     </ScrollView>
